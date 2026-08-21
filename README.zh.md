@@ -2,6 +2,9 @@
 
 简体中文 | [English](README.md)
 
+> [!IMPORTANT]
+> 这是 DSH Plugin Compatibility Guardian 的公开测试副本，后续可能接收自动兼容修复，禁止发布到 NPM。正式仓库和正式包仍是 [`LCYLYM/dsh-attachments`](https://github.com/LCYLYM/dsh-attachments) 与 `dsh-multimedia-webui-input`。
+
 ![DSH Multimedia WebUI Input：文件与文件夹发送、模型读写和安全清理](promo/assets/dsh-multimedia-webui-input-demo.gif)
 
 这是面向当前 DeepSeek Harness Web 客户端的独立社区插件。它在不修改官方

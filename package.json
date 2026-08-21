@@ -1,16 +1,17 @@
 {
   "name": "dsh-multimedia-webui-input",
   "version": "0.1.0",
-  "description": "Multimedia WebUI input support for DeepSeek Harness",
+  "private": true,
+  "description": "Public fixture for testing automated DSH plugin compatibility maintenance",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LCYLYM/dsh-attachments.git"
+    "url": "git+https://github.com/LCYLYM/dsh-attachments-guardian-fixture.git"
   },
   "bugs": {
-    "url": "https://github.com/LCYLYM/dsh-attachments/issues"
+    "url": "https://github.com/LCYLYM/dsh-attachments-guardian-fixture/issues"
   },
-  "homepage": "https://github.com/LCYLYM/dsh-attachments#readme",
+  "homepage": "https://github.com/LCYLYM/dsh-attachments-guardian-fixture#readme",
   "engines": {
     "node": "^22.19.0 || >=24.0.0"
   },
@@ -58,8 +59,5 @@
   "scripts": {
     "test": "node --test test/*.test.mjs"
   },
-  "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  }
+  "license": "MIT"
 }
