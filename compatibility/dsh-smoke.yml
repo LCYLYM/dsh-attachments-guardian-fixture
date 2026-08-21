@@ -1,0 +1,16 @@
+schema: 1
+requires_model_turn: false
+model_turn_scope: candidate-only
+fixture_mode: fixed
+web:
+  ready:
+    path: /
+    timeout_seconds: 120
+  assertions:
+    - id: plugin-health
+      method: GET
+      path: /community-multimedia-webui-input/v1/health
+      status: 200
+      json_subset:
+        ok: true
+        plugin: dsh-multimedia-webui-input
