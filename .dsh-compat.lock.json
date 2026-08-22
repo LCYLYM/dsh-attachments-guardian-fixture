@@ -53,21 +53,21 @@
       "provider": "deepseek-official",
       "model": "deepseek-v4-flash-vision-exp",
       "usage": {
-        "inputTokens": 71713,
-        "outputTokens": 5439,
-        "cacheReadTokens": 347904,
+        "inputTokens": 80289,
+        "outputTokens": 5794,
+        "cacheReadTokens": 356224,
         "cacheWriteTokens": 0,
-        "reasoningTokens": 2073,
-        "totalTokens": 425056,
-        "sessionFiles": 6
+        "reasoningTokens": 2230,
+        "totalTokens": 442307,
+        "sessionFiles": 7
       },
       "estimated_cny": {
-        "amount": 0.14944,
-        "band": "low_price",
+        "amount": 0.312062,
+        "band": "mixed",
         "revision": "deepseek-public-2026-08-21",
         "known": true
       },
-      "active_ms": 127582,
+      "active_ms": 135356,
       "limits": {
         "max_tokens": 1000000,
         "max_cny": 10,
