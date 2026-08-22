@@ -2,13 +2,13 @@
   "schema": 1,
   "resetBudget": "N",
   "verified": {
-    "snapshot_key": "509b98a0fe2f5e87e995413a79de206bb1ca746411b42c343fd7987d2cc5a65d",
-    "source_commit": "2c756d8b0a99d7317196dfb6e55bf44bfb9ccaaf",
+    "snapshot_key": "56bf311bf05c28b8646001b6967cde60ddaeeb7d7ce2fd2fd67fde9cb5f7888f",
+    "source_commit": "ba3e0c4daf37c44333ae77ebfc03b1e31f4244ca",
     "dsh": {
       "package": "@deepseek-ai/dsh",
       "version": "0.1.1-rc.2",
       "integrity": "sha512-UP1UIh6q3Gme/yXRn/QL2P8IsVlv8Shpg22TRJIZPsCRWLm4CBiA1MUvXmJAfsOEETBMLAl+xWPtFw6ICsN3wg==",
-      "graph_digest": "11cbc898fa8080f58da7dd75abe6f43f1bf6a159f258bd05ce82b20925c80826"
+      "graph_digest": "df7a474e07c6120e1533679816a260ea4b998549118c1a21cc47ba015a8af6da"
     },
     "plugin": {
       "package": "dsh-multimedia-webui-input",
@@ -18,7 +18,7 @@
     },
     "runtime": {
       "node": {
-        "exactVersion": "24.13.1",
+        "exactVersion": "24.19.0",
         "effectiveRange": "^22.19.0 || >=24.0.0",
         "source": "package.json#engines.node",
         "declarations": {
@@ -27,20 +27,20 @@
       },
       "packageManager": {
         "name": "npm",
-        "exactVersion": "11.8.0",
+        "exactVersion": "11.17.0",
         "source": "fallback-npm",
         "lockfiles": []
       },
       "runner": {
         "configuredLabel": "ubuntu-24.04",
-        "actualLabel": "local",
-        "os": "darwin",
-        "arch": "arm64",
-        "githubActions": false
+        "actualLabel": "GitHub Actions 1000000881",
+        "os": "Linux",
+        "arch": "x64",
+        "githubActions": true
       }
     },
-    "verified_at": "2026-08-21T15:42:31.692Z",
-    "report_url": null
+    "verified_at": "2026-08-22T07:05:38.665Z",
+    "report_url": "https://github.com/LCYLYM/dsh-attachments-guardian-fixture/actions/runs/32558667717"
   },
   "campaigns": {}
 }
