@@ -2,8 +2,8 @@
   "schema": 1,
   "resetBudget": "N",
   "verified": {
-    "snapshot_key": "38ac4bdc068129a123f5214024e7f91e53a02099d14d392afeda7cc7880b65ea",
-    "source_commit": "54da61884f877a75d5efa5c20fd2b1f18543b332",
+    "snapshot_key": "bf6d911d3d844dc07332031f71cdf7faf42a3f8098c14831a6203fc38b71a4e6",
+    "source_commit": "726c3f5cdd48ab4be16a9c22527517c48cabc3e5",
     "dsh": {
       "package": "@deepseek-ai/dsh",
       "version": "0.1.1-rc.2",
@@ -33,14 +33,45 @@
       },
       "runner": {
         "configuredLabel": "ubuntu-24.04",
-        "actualLabel": "GitHub Actions 1000000889",
+        "actualLabel": "GitHub Actions 1000000895",
         "os": "Linux",
         "arch": "x64",
         "githubActions": true
       }
     },
-    "verified_at": "2026-08-22T07:35:41.661Z",
-    "report_url": "https://github.com/LCYLYM/dsh-attachments-guardian-fixture/actions/runs/32559979953"
+    "verified_at": "2026-08-22T07:50:26.955Z",
+    "report_url": "https://github.com/LCYLYM/dsh-attachments-guardian-fixture/actions/runs/32560587541"
   },
-  "campaigns": {}
+  "campaigns": {
+    "0.1.1-rc.2": {
+      "status": "PASS",
+      "automatic_repair_used": true,
+      "attempts_used": 1,
+      "base_commit": "726c3f5cdd48ab4be16a9c22527517c48cabc3e5",
+      "repair_dsh_version": "0.1.1-rc.2",
+      "provider": "deepseek-official",
+      "model": "deepseek-v4-flash-vision-exp",
+      "usage": {
+        "inputTokens": 29117,
+        "outputTokens": 3562,
+        "cacheReadTokens": 305920,
+        "cacheWriteTokens": 0,
+        "reasoningTokens": 1229,
+        "totalTokens": 338599,
+        "sessionFiles": 1
+      },
+      "estimated_cny": {
+        "amount": 0.150001,
+        "band": "peak",
+        "revision": "deepseek-public-2026-08-21"
+      },
+      "active_ms": 47603,
+      "limits": {
+        "max_tokens": 1000000,
+        "max_cny": 10,
+        "max_wall_minutes": 60
+      },
+      "finished_at": "2026-08-22T07:50:27.625Z"
+    }
+  }
 }
