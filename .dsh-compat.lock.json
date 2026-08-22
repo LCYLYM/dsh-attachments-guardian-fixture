@@ -2,8 +2,9 @@
   "schema": 1,
   "resetBudget": "N",
   "verified": {
-    "snapshot_key": "bf6d911d3d844dc07332031f71cdf7faf42a3f8098c14831a6203fc38b71a4e6",
-    "source_commit": "726c3f5cdd48ab4be16a9c22527517c48cabc3e5",
+    "snapshot_key": "0888279e81a0f929385a8d8b4c305dc9c3826e3410226ef0acbf53aea7fcc314",
+    "source_commit": "8f29390d84f8ae5e437d2309cbfa8c6fab88d64e",
+    "source_tree_digest": "663bb1a0a3f3321549a69eb84eab6b1d03af9208e675c5fd5118a19278b17d01",
     "dsh": {
       "package": "@deepseek-ai/dsh",
       "version": "0.1.1-rc.2",
@@ -14,7 +15,7 @@
       "package": "dsh-multimedia-webui-input",
       "version": "0.1.0",
       "tarball_sha256": "8ae8c0fd48e042a02876123f648d5fafbaf03cbf1266a32d11863ef9fe62dd2d",
-      "contract_sha256": "b53dfdd5afbf0f2c491e34eb6cfd1a3d7fddae5841dda18e008c3b0f9769ad70"
+      "contract_sha256": "79ae619cf780a4b57ad8ce508eea86ffbd6537605bc3e8e56b61e21744906896"
     },
     "runtime": {
       "node": {
@@ -33,18 +34,18 @@
       },
       "runner": {
         "configuredLabel": "ubuntu-24.04",
-        "actualLabel": "GitHub Actions 1000000895",
+        "actualLabel": "GitHub Actions 1000000898",
         "os": "Linux",
         "arch": "x64",
         "githubActions": true
       }
     },
-    "verified_at": "2026-08-22T07:50:26.955Z",
-    "report_url": "https://github.com/LCYLYM/dsh-attachments-guardian-fixture/actions/runs/32560587541"
+    "verified_at": "2026-08-22T09:29:13.186Z",
+    "report_url": "https://github.com/LCYLYM/dsh-attachments-guardian-fixture/actions/runs/32565047077"
   },
   "campaigns": {
     "0.1.1-rc.2": {
-      "status": "PASS",
+      "status": "BLOCKED",
       "automatic_repair_used": true,
       "attempts_used": 1,
       "base_commit": "726c3f5cdd48ab4be16a9c22527517c48cabc3e5",
@@ -65,13 +66,20 @@
         "band": "peak",
         "revision": "deepseek-public-2026-08-21"
       },
-      "active_ms": 47603,
+      "active_ms": 56556,
       "limits": {
         "max_tokens": 1000000,
         "max_cny": 10,
         "max_wall_minutes": 60
       },
-      "finished_at": "2026-08-22T07:50:27.625Z"
+      "finished_at": "2026-08-22T07:50:27.625Z",
+      "candidate_smoke": {
+        "status": "BLOCKED",
+        "error": {
+          "code": "WEB_EXITED",
+          "message": "candidate model smoke web process exited"
+        }
+      }
     }
   }
 }
