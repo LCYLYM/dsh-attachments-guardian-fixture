@@ -2,8 +2,9 @@
   "schema": 1,
   "resetBudget": "N",
   "verified": {
-    "snapshot_key": "bf6d911d3d844dc07332031f71cdf7faf42a3f8098c14831a6203fc38b71a4e6",
-    "source_commit": "726c3f5cdd48ab4be16a9c22527517c48cabc3e5",
+    "snapshot_key": "37a5e8d8ae19a1a20c3bd5a57ac221e509ee9a37a71409ddde0ad4984332fd36",
+    "source_commit": "b10ace9061c9fcbd9c848926213eee6b6f5225b7",
+    "source_tree_digest": "8a03b1854b89b55bfde894fb87f314db295637d743579dc85a7442759313a035",
     "dsh": {
       "package": "@deepseek-ai/dsh",
       "version": "0.1.1-rc.2",
@@ -14,7 +15,7 @@
       "package": "dsh-multimedia-webui-input",
       "version": "0.1.0",
       "tarball_sha256": "8ae8c0fd48e042a02876123f648d5fafbaf03cbf1266a32d11863ef9fe62dd2d",
-      "contract_sha256": "b53dfdd5afbf0f2c491e34eb6cfd1a3d7fddae5841dda18e008c3b0f9769ad70"
+      "contract_sha256": "79ae619cf780a4b57ad8ce508eea86ffbd6537605bc3e8e56b61e21744906896"
     },
     "runtime": {
       "node": {
@@ -33,14 +34,14 @@
       },
       "runner": {
         "configuredLabel": "ubuntu-24.04",
-        "actualLabel": "GitHub Actions 1000000895",
+        "actualLabel": "GitHub Actions 1000000906",
         "os": "Linux",
         "arch": "x64",
         "githubActions": true
       }
     },
-    "verified_at": "2026-08-22T07:50:26.955Z",
-    "report_url": "https://github.com/LCYLYM/dsh-attachments-guardian-fixture/actions/runs/32560587541"
+    "verified_at": "2026-08-22T09:37:40.125Z",
+    "report_url": "https://github.com/LCYLYM/dsh-attachments-guardian-fixture/actions/runs/32565423873"
   },
   "campaigns": {
     "0.1.1-rc.2": {
@@ -52,26 +53,62 @@
       "provider": "deepseek-official",
       "model": "deepseek-v4-flash-vision-exp",
       "usage": {
-        "inputTokens": 29117,
-        "outputTokens": 3562,
+        "inputTokens": 37290,
+        "outputTokens": 3928,
         "cacheReadTokens": 305920,
         "cacheWriteTokens": 0,
-        "reasoningTokens": 1229,
-        "totalTokens": 338599,
-        "sessionFiles": 1
+        "reasoningTokens": 1519,
+        "totalTokens": 347138,
+        "sessionFiles": 2
       },
       "estimated_cny": {
-        "amount": 0.150001,
+        "amount": 0.177814,
         "band": "peak",
-        "revision": "deepseek-public-2026-08-21"
+        "revision": "deepseek-public-2026-08-21",
+        "known": true
       },
-      "active_ms": 47603,
+      "active_ms": 61833,
       "limits": {
         "max_tokens": 1000000,
         "max_cny": 10,
         "max_wall_minutes": 60
       },
-      "finished_at": "2026-08-22T07:50:27.625Z"
+      "finished_at": "2026-08-22T07:50:27.625Z",
+      "candidate_smoke": {
+        "status": "PASS",
+        "attempts": 1,
+        "fixtures": [
+          {
+            "source": "compatibility/fixtures/guardian-vision.png",
+            "name": "guardian-vision.png",
+            "mediaType": "image/png",
+            "bytes": 2712,
+            "sha256": "c88283c1c8b71e4ebfb190e7a4a462dd4a51dd42383f1790b1e28d5f5179b62c"
+          }
+        ],
+        "evidence": {
+          "eventTypes": [
+            "agent/inbox/spliced",
+            "approval/policy",
+            "assistant/chunk",
+            "assistant/message",
+            "permission/preset",
+            "request/context",
+            "request/header",
+            "sandbox/mode",
+            "session/title",
+            "session/title-llm-request",
+            "step/end",
+            "step/start",
+            "turn/end",
+            "turn/start",
+            "user/message"
+          ],
+          "finalResponseSha256": "52e8fff141af88cfb42fc6ddc79a3e4223f17eb92093d6bf434b66bf038b1a57",
+          "imageObserved": true,
+          "pluginInputObserved": true
+        }
+      }
     }
   }
 }
