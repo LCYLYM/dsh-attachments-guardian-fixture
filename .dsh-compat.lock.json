@@ -2,8 +2,8 @@
   "schema": 1,
   "resetBudget": "N",
   "verified": {
-    "snapshot_key": "56bf311bf05c28b8646001b6967cde60ddaeeb7d7ce2fd2fd67fde9cb5f7888f",
-    "source_commit": "ba3e0c4daf37c44333ae77ebfc03b1e31f4244ca",
+    "snapshot_key": "db4aa9de5e3cf4e613167febbadb6cf3bc65c475807ee72e31475b32805f0a91",
+    "source_commit": "8d2acc066e18443f374942fa591ccafb35153faa",
     "dsh": {
       "package": "@deepseek-ai/dsh",
       "version": "0.1.1-rc.2",
@@ -33,14 +33,14 @@
       },
       "runner": {
         "configuredLabel": "ubuntu-24.04",
-        "actualLabel": "GitHub Actions 1000000881",
+        "actualLabel": "GitHub Actions 1000000885",
         "os": "Linux",
         "arch": "x64",
         "githubActions": true
       }
     },
-    "verified_at": "2026-08-22T07:05:38.665Z",
-    "report_url": "https://github.com/LCYLYM/dsh-attachments-guardian-fixture/actions/runs/32558667717"
+    "verified_at": "2026-08-22T07:14:42.868Z",
+    "report_url": "https://github.com/LCYLYM/dsh-attachments-guardian-fixture/actions/runs/32559056261"
   },
   "campaigns": {}
 }
