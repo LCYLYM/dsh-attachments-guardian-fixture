@@ -16,13 +16,13 @@ permissions:
 
 jobs:
   guardian:
-    # Guardian 0.1.0-dev.0; only change this full SHA during an explicit engine upgrade.
-    uses: LCYLYM/dsh-plugin-compat-guardian/.github/workflows/guardian.yml@6c438e407ff350fc7b6dc1e7253adfb8fac06edd
+    # Guardian 0.1.0-dev.0 + CI identity fix; only change this SHA during an explicit upgrade.
+    uses: LCYLYM/dsh-plugin-compat-guardian/.github/workflows/guardian.yml@d0aea35778a8a0ae888c3dddc2564572c3022906
     permissions:
       contents: write
       pull-requests: write
       issues: write
     with:
       guardian_repository: LCYLYM/dsh-plugin-compat-guardian
-      guardian_ref: 6c438e407ff350fc7b6dc1e7253adfb8fac06edd
+      guardian_ref: d0aea35778a8a0ae888c3dddc2564572c3022906
       runner: ubuntu-24.04
