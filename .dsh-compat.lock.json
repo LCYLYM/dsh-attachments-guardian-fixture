@@ -2,9 +2,9 @@
   "schema": 1,
   "resetBudget": "N",
   "verified": {
-    "snapshot_key": "37a5e8d8ae19a1a20c3bd5a57ac221e509ee9a37a71409ddde0ad4984332fd36",
-    "source_commit": "b10ace9061c9fcbd9c848926213eee6b6f5225b7",
-    "source_tree_digest": "8a03b1854b89b55bfde894fb87f314db295637d743579dc85a7442759313a035",
+    "snapshot_key": "57b307cc919af055b92d27b317b17e696cfc5fbed65ebc6b283ada10693c980e",
+    "source_commit": "47ea1ce1ab4d49221ffdd6b7f12318d5dca2d4fa",
+    "source_tree_digest": "b17ba0f574d8cce38677c0b4b1c723b682eee4fbd1316d9db22656b46c538eae",
     "dsh": {
       "package": "@deepseek-ai/dsh",
       "version": "0.1.1-rc.2",
@@ -34,14 +34,14 @@
       },
       "runner": {
         "configuredLabel": "ubuntu-24.04",
-        "actualLabel": "GitHub Actions 1000000906",
+        "actualLabel": "GitHub Actions 1000000912",
         "os": "Linux",
         "arch": "x64",
         "githubActions": true
       }
     },
-    "verified_at": "2026-08-22T09:37:40.125Z",
-    "report_url": "https://github.com/LCYLYM/dsh-attachments-guardian-fixture/actions/runs/32565423873"
+    "verified_at": "2026-08-22T09:43:53.687Z",
+    "report_url": "https://github.com/LCYLYM/dsh-attachments-guardian-fixture/actions/runs/32565706247"
   },
   "campaigns": {
     "0.1.1-rc.2": {
@@ -53,21 +53,21 @@
       "provider": "deepseek-official",
       "model": "deepseek-v4-flash-vision-exp",
       "usage": {
-        "inputTokens": 37290,
-        "outputTokens": 3928,
-        "cacheReadTokens": 305920,
+        "inputTokens": 45862,
+        "outputTokens": 4308,
+        "cacheReadTokens": 314240,
         "cacheWriteTokens": 0,
-        "reasoningTokens": 1519,
-        "totalTokens": 347138,
-        "sessionFiles": 2
+        "reasoningTokens": 1689,
+        "totalTokens": 364410,
+        "sessionFiles": 3
       },
       "estimated_cny": {
-        "amount": 0.177814,
+        "amount": 0.207782,
         "band": "peak",
         "revision": "deepseek-public-2026-08-21",
         "known": true
       },
-      "active_ms": 61833,
+      "active_ms": 78440,
       "limits": {
         "max_tokens": 1000000,
         "max_cny": 10,
@@ -76,7 +76,7 @@
       "finished_at": "2026-08-22T07:50:27.625Z",
       "candidate_smoke": {
         "status": "PASS",
-        "attempts": 1,
+        "attempts": 2,
         "fixtures": [
           {
             "source": "compatibility/fixtures/guardian-vision.png",
@@ -100,11 +100,13 @@
             "session/title-llm-request",
             "step/end",
             "step/start",
+            "tool/call",
+            "tool/result",
             "turn/end",
             "turn/start",
             "user/message"
           ],
-          "finalResponseSha256": "52e8fff141af88cfb42fc6ddc79a3e4223f17eb92093d6bf434b66bf038b1a57",
+          "finalResponseSha256": "69828aa5d44d7f0583ad0a390b23413eb2399b3d85ad86a31fa62ed732ff3bad",
           "imageObserved": true,
           "pluginInputObserved": true
         }
