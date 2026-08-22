@@ -18,14 +18,14 @@ permissions:
 jobs:
   guardian:
     # Guardian 0.1.0-dev.0 repair MVP; only change this full SHA during an explicit upgrade.
-    uses: LCYLYM/dsh-plugin-compat-guardian/.github/workflows/guardian.yml@f2b7f131ae945ead64ce4f842f8984817f74bf57
+    uses: LCYLYM/dsh-plugin-compat-guardian/.github/workflows/guardian.yml@ba18c1d302f5b0948f3499455dcc6184848d56c2
     permissions:
       contents: write
       pull-requests: write
       issues: write
     with:
       guardian_repository: LCYLYM/dsh-plugin-compat-guardian
-      guardian_ref: f2b7f131ae945ead64ce4f842f8984817f74bf57
+      guardian_ref: ba18c1d302f5b0948f3499455dcc6184848d56c2
       runner: ubuntu-24.04
     secrets:
       deepseek_api_key: ${{ secrets.DEEPSEEK_API_KEY }}
