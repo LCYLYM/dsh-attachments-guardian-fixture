@@ -2,9 +2,9 @@
   "schema": 1,
   "resetBudget": "N",
   "verified": {
-    "snapshot_key": "1c043c100e972de94320c4fb211113b7edd72c03a335995dad355fa938370b14",
-    "source_commit": "2fcf99f9abe77eedbfa1df4b2a317d81b45587bf",
-    "source_tree_digest": "d027b754b8ef43b8f1667d0e0f25108fcc5e59045d738e2f744301a765b8372a",
+    "snapshot_key": "57b307cc919af055b92d27b317b17e696cfc5fbed65ebc6b283ada10693c980e",
+    "source_commit": "484fa5a2fccfbf765dbdf3155540e0acccd3e94f",
+    "source_tree_digest": "b17ba0f574d8cce38677c0b4b1c723b682eee4fbd1316d9db22656b46c538eae",
     "dsh": {
       "package": "@deepseek-ai/dsh",
       "version": "0.1.1-rc.2",
@@ -34,18 +34,18 @@
       },
       "runner": {
         "configuredLabel": "ubuntu-24.04",
-        "actualLabel": "GitHub Actions 1000000924",
+        "actualLabel": "GitHub Actions 1000000928",
         "os": "Linux",
         "arch": "x64",
         "githubActions": true
       }
     },
-    "verified_at": "2026-08-22T09:52:45.084Z",
-    "report_url": "https://github.com/LCYLYM/dsh-attachments-guardian-fixture/actions/runs/32566086836"
+    "verified_at": "2026-08-22T09:55:26.456Z",
+    "report_url": "https://github.com/LCYLYM/dsh-attachments-guardian-fixture/actions/runs/32566217178"
   },
   "campaigns": {
     "0.1.1-rc.2": {
-      "status": "PASS",
+      "status": "BLOCKED_EXTERNAL",
       "automatic_repair_used": true,
       "attempts_used": 1,
       "base_commit": "726c3f5cdd48ab4be16a9c22527517c48cabc3e5",
@@ -67,7 +67,7 @@
         "revision": "deepseek-public-2026-08-21",
         "known": true
       },
-      "active_ms": 109415,
+      "active_ms": 117569,
       "limits": {
         "max_tokens": 1000000,
         "max_cny": 10,
@@ -75,40 +75,10 @@
       },
       "finished_at": "2026-08-22T07:50:27.625Z",
       "candidate_smoke": {
-        "status": "PASS",
-        "attempts": 1,
-        "fixtures": [
-          {
-            "source": "compatibility/fixtures/guardian-vision.png",
-            "name": "guardian-vision.png",
-            "mediaType": "image/png",
-            "bytes": 2712,
-            "sha256": "c88283c1c8b71e4ebfb190e7a4a462dd4a51dd42383f1790b1e28d5f5179b62c"
-          }
-        ],
-        "evidence": {
-          "eventTypes": [
-            "agent/inbox/spliced",
-            "approval/policy",
-            "assistant/chunk",
-            "assistant/message",
-            "permission/preset",
-            "request/context",
-            "request/header",
-            "sandbox/mode",
-            "session/title",
-            "session/title-llm-request",
-            "step/end",
-            "step/start",
-            "tool/call",
-            "tool/result",
-            "turn/end",
-            "turn/start",
-            "user/message"
-          ],
-          "finalResponseSha256": "b701ef6815b4ce3736713b32c88d89c10538c19090da6b3d3d735f01dbe055d9",
-          "imageObserved": true,
-          "pluginInputObserved": true
+        "status": "BLOCKED_EXTERNAL",
+        "error": {
+          "code": "MODEL_SMOKE_TRANSPORT",
+          "message": "DSH RPC session.create returned HTTP 404"
         }
       }
     }
