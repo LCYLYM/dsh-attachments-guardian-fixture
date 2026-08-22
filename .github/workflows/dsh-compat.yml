@@ -18,14 +18,14 @@ permissions:
 jobs:
   guardian:
     # Guardian 0.1.0-dev.0 full campaign workflow; only change this SHA during an explicit upgrade.
-    uses: LCYLYM/dsh-plugin-compat-guardian/.github/workflows/guardian.yml@589f09f581b3cad57316aa817f8d37565d115933
+    uses: LCYLYM/dsh-plugin-compat-guardian/.github/workflows/guardian.yml@aea9104bff5977e9092508ffb462c105f8fe0f83
     permissions:
       contents: write
       pull-requests: write
       issues: write
     with:
       guardian_repository: LCYLYM/dsh-plugin-compat-guardian
-      guardian_ref: 589f09f581b3cad57316aa817f8d37565d115933
+      guardian_ref: aea9104bff5977e9092508ffb462c105f8fe0f83
       runner: ubuntu-24.04
     secrets:
       deepseek_api_key: ${{ secrets.DEEPSEEK_API_KEY }}
