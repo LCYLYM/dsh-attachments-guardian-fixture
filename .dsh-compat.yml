@@ -35,5 +35,5 @@ budget:
   converge_remaining_ratio: 0.3
   converge_message_enabled: true
 delivery:
-  mode: direct-push
+  mode: pull-request
   branch_prefix: automation/dsh-compat
