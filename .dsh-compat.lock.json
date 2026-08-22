@@ -2,9 +2,9 @@
   "schema": 1,
   "resetBudget": "N",
   "verified": {
-    "snapshot_key": "7f5c8783840b3b7277761b527228cc9eb634f61c22b5573575700d83cca7930f",
-    "source_commit": "ddd56676c9f62b815c91a3c45c5b78a435e6eeb4",
-    "source_tree_digest": "a0b4db67a0432ca2011911de06e4b39082f81aef2cffb50614dd92702b779166",
+    "snapshot_key": "d8d7e1761d8d61a92f8f7212da3f7cb7e04b68e9f8f74bed2980db389aa018c4",
+    "source_commit": "3a818b08c2035f460e87dd3f05049dff3c400b14",
+    "source_tree_digest": "ce4ad65fd300ee22f450e683fa867a70611cb97d79c70d71d60ae22a3e702ca2",
     "dsh": {
       "package": "@deepseek-ai/dsh",
       "version": "0.1.1-rc.2",
@@ -34,14 +34,14 @@
       },
       "runner": {
         "configuredLabel": "ubuntu-24.04",
-        "actualLabel": "GitHub Actions 1000000936",
+        "actualLabel": "GitHub Actions 1000000942",
         "os": "Linux",
         "arch": "x64",
         "githubActions": true
       }
     },
-    "verified_at": "2026-08-22T10:02:17.910Z",
-    "report_url": "https://github.com/LCYLYM/dsh-attachments-guardian-fixture/actions/runs/32566532050"
+    "verified_at": "2026-08-22T10:11:01.874Z",
+    "report_url": "https://github.com/LCYLYM/dsh-attachments-guardian-fixture/actions/runs/32566922071"
   },
   "campaigns": {
     "0.1.1-rc.2": {
@@ -53,21 +53,21 @@
       "provider": "deepseek-official",
       "model": "deepseek-v4-flash-vision-exp",
       "usage": {
-        "inputTokens": 80289,
-        "outputTokens": 5794,
-        "cacheReadTokens": 356224,
+        "inputTokens": 88885,
+        "outputTokens": 6148,
+        "cacheReadTokens": 364544,
         "cacheWriteTokens": 0,
-        "reasoningTokens": 2230,
-        "totalTokens": 442307,
-        "sessionFiles": 7
+        "reasoningTokens": 2390,
+        "totalTokens": 459577,
+        "sessionFiles": 8
       },
       "estimated_cny": {
-        "amount": 0.312062,
+        "amount": 0.326965,
         "band": "mixed",
         "revision": "deepseek-public-2026-08-21",
         "known": true
       },
-      "active_ms": 135356,
+      "active_ms": 149008,
       "limits": {
         "max_tokens": 1000000,
         "max_cny": 10,
@@ -106,7 +106,7 @@
             "turn/start",
             "user/message"
           ],
-          "finalResponseSha256": "945203455068998495597b064d6398846b6b6d17ad1b607fc4521dae19ffe8ea",
+          "finalResponseSha256": "c30cb7306ddb1ecba569d9eebda862380c9a900fef97e4bf9b1a784d0a9e30ac",
           "imageObserved": true,
           "pluginInputObserved": true
         }
