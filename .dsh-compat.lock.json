@@ -2,9 +2,9 @@
   "schema": 1,
   "resetBudget": "N",
   "verified": {
-    "snapshot_key": "d8d7e1761d8d61a92f8f7212da3f7cb7e04b68e9f8f74bed2980db389aa018c4",
-    "source_commit": "3a818b08c2035f460e87dd3f05049dff3c400b14",
-    "source_tree_digest": "ce4ad65fd300ee22f450e683fa867a70611cb97d79c70d71d60ae22a3e702ca2",
+    "snapshot_key": "9eda67304ae782f229fc7a1d3e511c02dd8306dc50370782bebbba5c13f13eea",
+    "source_commit": "e122d80bd19bbf22a72417ee0015f0d41b4e6cd8",
+    "source_tree_digest": "f2fe5a9e8ab26562af823cbcfc76acd0721baa0a0677181107423280c28e9dc2",
     "dsh": {
       "package": "@deepseek-ai/dsh",
       "version": "0.1.1-rc.2",
@@ -34,14 +34,14 @@
       },
       "runner": {
         "configuredLabel": "ubuntu-24.04",
-        "actualLabel": "GitHub Actions 1000000942",
+        "actualLabel": "GitHub Actions 1000000968",
         "os": "Linux",
         "arch": "x64",
         "githubActions": true
       }
     },
-    "verified_at": "2026-08-22T10:11:01.874Z",
-    "report_url": "https://github.com/LCYLYM/dsh-attachments-guardian-fixture/actions/runs/32566922071"
+    "verified_at": "2026-08-22T13:46:59.027Z",
+    "report_url": "https://github.com/LCYLYM/dsh-attachments-guardian-fixture/actions/runs/32576745068"
   },
   "campaigns": {
     "0.1.1-rc.2": {
@@ -53,21 +53,21 @@
       "provider": "deepseek-official",
       "model": "deepseek-v4-flash-vision-exp",
       "usage": {
-        "inputTokens": 88885,
-        "outputTokens": 6148,
-        "cacheReadTokens": 364544,
+        "inputTokens": 97840,
+        "outputTokens": 8867,
+        "cacheReadTokens": 412800,
         "cacheWriteTokens": 0,
-        "reasoningTokens": 2390,
-        "totalTokens": 459577,
-        "sessionFiles": 8
+        "reasoningTokens": 2977,
+        "totalTokens": 519507,
+        "sessionFiles": 9
       },
       "estimated_cny": {
-        "amount": 0.326965,
+        "amount": 0.355046,
         "band": "mixed",
         "revision": "deepseek-public-2026-08-21",
         "known": true
       },
-      "active_ms": 149008,
+      "active_ms": 188861,
       "limits": {
         "max_tokens": 1000000,
         "max_cny": 10,
@@ -97,7 +97,6 @@
             "request/header",
             "sandbox/mode",
             "session/title",
-            "session/title-llm-request",
             "step/end",
             "step/start",
             "tool/call",
@@ -106,11 +105,12 @@
             "turn/start",
             "user/message"
           ],
-          "finalResponseSha256": "c30cb7306ddb1ecba569d9eebda862380c9a900fef97e4bf9b1a784d0a9e30ac",
+          "finalResponseSha256": "c42aee3ddaae43ec3da365acfd14e4fd1df0a7c6e1661e079b64450ef301b721",
           "imageObserved": true,
           "pluginInputObserved": true
         }
-      }
+      },
+      "input_fingerprint": "b5f93166268c1a460eb2fdb163238ad132509f2276ababa237b2359166718459"
     }
   }
 }
