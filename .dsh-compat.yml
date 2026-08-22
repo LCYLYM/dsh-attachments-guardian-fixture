@@ -1,0 +1,39 @@
+schema: 1
+watch:
+  registry: https://registry.npmjs.org
+  package: "@deepseek-ai/dsh"
+  channel: latest
+runtime:
+  node: auto
+  package_manager: auto
+  runner: ubuntu-24.04
+repair:
+  dsh_version: 0.1.1-rc.2
+  provider: deepseek-official
+  model: deepseek-v4-flash-vision-exp
+plugin:
+  workspace: .
+  package_json: package.json
+  profile: web
+  install_from: npm-pack
+  surface: web
+smoke:
+  contract: compatibility/dsh-smoke.yml
+  hints: ""
+gates:
+  repository:
+    - npm test
+    - npm pack --dry-run
+  require_install_remove_roundtrip: true
+  require_dump_config: true
+  require_real_web_boot: true
+  require_plugin_assertion: true
+budget:
+  max_tokens: 1000000
+  max_cny: 10
+  max_wall_minutes: 60
+  converge_remaining_ratio: 0.3
+  converge_message_enabled: true
+delivery:
+  mode: pull-request
+  branch_prefix: automation/dsh-compat

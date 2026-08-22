@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "resetBudget": "N",
+  "verified": {
+    "snapshot_key": "509b98a0fe2f5e87e995413a79de206bb1ca746411b42c343fd7987d2cc5a65d",
+    "source_commit": "2c756d8b0a99d7317196dfb6e55bf44bfb9ccaaf",
+    "dsh": {
+      "package": "@deepseek-ai/dsh",
+      "version": "0.1.1-rc.2",
+      "integrity": "sha512-UP1UIh6q3Gme/yXRn/QL2P8IsVlv8Shpg22TRJIZPsCRWLm4CBiA1MUvXmJAfsOEETBMLAl+xWPtFw6ICsN3wg==",
+      "graph_digest": "11cbc898fa8080f58da7dd75abe6f43f1bf6a159f258bd05ce82b20925c80826"
+    },
+    "plugin": {
+      "package": "dsh-multimedia-webui-input",
+      "version": "0.1.0",
+      "tarball_sha256": "8ae8c0fd48e042a02876123f648d5fafbaf03cbf1266a32d11863ef9fe62dd2d",
+      "contract_sha256": "b53dfdd5afbf0f2c491e34eb6cfd1a3d7fddae5841dda18e008c3b0f9769ad70"
+    },
+    "runtime": {
+      "node": {
+        "exactVersion": "24.13.1",
+        "effectiveRange": "^22.19.0 || >=24.0.0",
+        "source": "package.json#engines.node",
+        "declarations": {
+          "package.json#engines.node": "^22.19.0 || >=24.0.0"
+        }
+      },
+      "packageManager": {
+        "name": "npm",
+        "exactVersion": "11.8.0",
+        "source": "fallback-npm",
+        "lockfiles": []
+      },
+      "runner": {
+        "configuredLabel": "ubuntu-24.04",
+        "actualLabel": "local",
+        "os": "darwin",
+        "arch": "arm64",
+        "githubActions": false
+      }
+    },
+    "verified_at": "2026-08-21T15:42:31.692Z",
+    "report_url": null
+  },
+  "campaigns": {}
+}
