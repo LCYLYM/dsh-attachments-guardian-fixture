@@ -17,15 +17,20 @@ permissions:
 
 jobs:
   guardian:
-    # Guardian 0.1.0-dev.0 repair MVP; only change this full SHA during an explicit upgrade.
-    uses: LCYLYM/dsh-plugin-compat-guardian/.github/workflows/guardian.yml@ba18c1d302f5b0948f3499455dcc6184848d56c2
+    # Guardian 0.1.0-dev.0 full campaign workflow; only change this SHA during an explicit upgrade.
+    uses: LCYLYM/dsh-plugin-compat-guardian/.github/workflows/guardian.yml@589f09f581b3cad57316aa817f8d37565d115933
     permissions:
       contents: write
       pull-requests: write
       issues: write
     with:
       guardian_repository: LCYLYM/dsh-plugin-compat-guardian
-      guardian_ref: ba18c1d302f5b0948f3499455dcc6184848d56c2
+      guardian_ref: 589f09f581b3cad57316aa817f8d37565d115933
       runner: ubuntu-24.04
     secrets:
       deepseek_api_key: ${{ secrets.DEEPSEEK_API_KEY }}
+      publisher_token: ${{ secrets.DSH_GUARDIAN_PUBLISH_TOKEN }}
+      email_gateway_url: ${{ secrets.GUARDIAN_EMAIL_GATEWAY_URL }}
+      telegram_bot_token: ${{ secrets.GUARDIAN_TELEGRAM_BOT_TOKEN }}
+      telegram_chat_id: ${{ secrets.GUARDIAN_TELEGRAM_CHAT_ID }}
+      notification_webhook_url: ${{ secrets.GUARDIAN_WEBHOOK_URL }}

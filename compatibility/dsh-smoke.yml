@@ -1,7 +1,20 @@
 schema: 1
-requires_model_turn: false
+requires_model_turn: true
 model_turn_scope: candidate-only
 fixture_mode: fixed
+model_smoke:
+  prompt: Briefly describe the visible interface in this image. A non-empty factual response is enough.
+  fixtures:
+    - path: compatibility/fixtures/guardian-vision.png
+      name: guardian-vision.png
+      media_type: image/png
+  plugin_upload:
+    endpoint_root: /community-multimedia-webui-input/v1
+    path: guardian-vision.png
+  required_event_types:
+    - user/message
+    - assistant/message
+    - turn/end
 web:
   ready:
     path: /
