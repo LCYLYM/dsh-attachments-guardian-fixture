@@ -10,19 +10,22 @@ on:
       - .dsh-compat.yml
       - .dsh-compat.lock.json
       - compatibility/dsh-smoke.yml
+      - .github/workflows/dsh-compat.yml
 
 permissions:
   contents: read
 
 jobs:
   guardian:
-    # Guardian 0.1.0-dev.0 + CI identity fix; only change this SHA during an explicit upgrade.
-    uses: LCYLYM/dsh-plugin-compat-guardian/.github/workflows/guardian.yml@d0aea35778a8a0ae888c3dddc2564572c3022906
+    # Guardian 0.1.0-dev.0 repair MVP; only change this full SHA during an explicit upgrade.
+    uses: LCYLYM/dsh-plugin-compat-guardian/.github/workflows/guardian.yml@f2b7f131ae945ead64ce4f842f8984817f74bf57
     permissions:
       contents: write
       pull-requests: write
       issues: write
     with:
       guardian_repository: LCYLYM/dsh-plugin-compat-guardian
-      guardian_ref: d0aea35778a8a0ae888c3dddc2564572c3022906
+      guardian_ref: f2b7f131ae945ead64ce4f842f8984817f74bf57
       runner: ubuntu-24.04
+    secrets:
+      deepseek_api_key: ${{ secrets.DEEPSEEK_API_KEY }}
