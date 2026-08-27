@@ -1,18 +1,18 @@
 schema: 1
 requires_model_turn: true
 model_turn_scope: candidate-only
-fixture_mode: fixed
+fixture_mode: none
 model_smoke:
-  prompt: Briefly describe the visible interface in this image. A non-empty factual response is enough.
-  fixtures:
-    - path: compatibility/fixtures/guardian-vision.png
-      name: guardian-vision.png
-      media_type: image/png
-  plugin_upload:
-    endpoint_root: /community-multimedia-webui-input/v1
-    path: guardian-vision.png
+  input_mode: text
+  prompt: >-
+    This is a pure-text DSH compatibility smoke. First call the safe read-only
+    `read` tool with {"path":"package.json"}. After the tool result, reply in
+    one short sentence with a concrete fact from that file. You must invoke a
+    tool before replying, and the final response must be non-empty.
   required_event_types:
     - user/message
+    - tool/call
+    - tool/result
     - assistant/message
     - turn/end
 web:
