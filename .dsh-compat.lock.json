@@ -111,6 +111,30 @@
           "pluginInputObserved": true
         }
       }
+    },
+    "0.1.5-rc.2": {
+      "status": "BLOCKED_EXTERNAL",
+      "input_fingerprint": "e53fbcea8808a354ec2a435a98a60b7f661133ce6394b9d265131a71e550341a",
+      "route_fingerprint": "7f4fa6d6f3bdb11cd21af3a943bd4af8273e85e2371ac98460f6217188d367ae",
+      "candidate_smoke": {
+        "status": "BLOCKED_EXTERNAL",
+        "attempts": 0,
+        "error": {
+          "code": "MODEL_PROVIDER_TIMEOUT",
+          "message": "模型服务请求超时，当次最多重试一次；仍失败则冻结定时重跑。"
+        }
+      },
+      "usage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0,
+        "reasoningTokens": 0,
+        "totalTokens": 0,
+        "sessionFiles": 0
+      },
+      "active_ms": 69619,
+      "automatic_repair_used": false
     }
   }
 }
