@@ -2,24 +2,32 @@
   "schema": 1,
   "resetBudget": "N",
   "verified": {
-    "snapshot_key": "d8d7e1761d8d61a92f8f7212da3f7cb7e04b68e9f8f74bed2980db389aa018c4",
-    "source_commit": "3a818b08c2035f460e87dd3f05049dff3c400b14",
-    "source_tree_digest": "ce4ad65fd300ee22f450e683fa867a70611cb97d79c70d71d60ae22a3e702ca2",
+    "snapshot_key": "2cd0b6988521469ebfcce3197126f0700bfd72a724a7759b5828f76df47e7a16",
+    "source_commit": "5def38da868ca69995ff27df9617c0165787c430",
+    "source_tree_digest": "4fc4a446f6bf59c8e73aff80760b1457fc24f8744918704878bd36fb892d6871",
     "dsh": {
       "package": "@deepseek-ai/dsh",
-      "version": "0.1.1-rc.2",
-      "integrity": "sha512-UP1UIh6q3Gme/yXRn/QL2P8IsVlv8Shpg22TRJIZPsCRWLm4CBiA1MUvXmJAfsOEETBMLAl+xWPtFw6ICsN3wg==",
-      "graph_digest": "df7a474e07c6120e1533679816a260ea4b998549118c1a21cc47ba015a8af6da"
+      "version": "0.2.1-alpha.2",
+      "integrity": "sha512-CkRE0uAOg2ldL2VpfF4cNRsl178CH5nM+8YklPrlMZl5ln0KhVfd42dJuRlgOXZmkpizCRvrVS8LAL+GKfgk0w==",
+      "graph_digest": "ce6e4a6e5b2620861b970b867cbdea7bc97c7fd976bbbb98010dc85a0818bf3d",
+      "release": {
+        "tag": "dsh-v0.2.1-alpha.2",
+        "version": "0.2.1-alpha.2",
+        "commit": "d743267388641bc76f17c45ce8b4c231aed1d32c",
+        "url": "https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.1-alpha.2",
+        "publishedAt": "2026-10-09T11:09:26Z",
+        "prerelease": true
+      }
     },
     "plugin": {
       "package": "dsh-multimedia-webui-input",
       "version": "0.1.0",
       "tarball_sha256": "8ae8c0fd48e042a02876123f648d5fafbaf03cbf1266a32d11863ef9fe62dd2d",
-      "contract_sha256": "79ae619cf780a4b57ad8ce508eea86ffbd6537605bc3e8e56b61e21744906896"
+      "contract_sha256": "898b044054c26e331ff418e01b9468eadeab1c4a9ef6a0c3ea6ea272feb08aa2"
     },
     "runtime": {
       "node": {
-        "exactVersion": "24.19.0",
+        "exactVersion": "24.21.0",
         "effectiveRange": "^22.19.0 || >=24.0.0",
         "source": "package.json#engines.node",
         "declarations": {
@@ -28,20 +36,20 @@
       },
       "packageManager": {
         "name": "npm",
-        "exactVersion": "11.17.0",
+        "exactVersion": "11.19.0",
         "source": "fallback-npm",
         "lockfiles": []
       },
       "runner": {
         "configuredLabel": "ubuntu-24.04",
-        "actualLabel": "GitHub Actions 1000000942",
+        "actualLabel": "GitHub Actions 1000002329",
         "os": "Linux",
         "arch": "x64",
         "githubActions": true
       }
     },
-    "verified_at": "2026-08-22T10:11:01.874Z",
-    "report_url": "https://github.com/LCYLYM/dsh-attachments-guardian-fixture/actions/runs/32566922071"
+    "verified_at": "2026-10-11T17:49:31.423Z",
+    "report_url": "https://github.com/LCYLYM/dsh-attachments-guardian-fixture/actions/runs/38161204356"
   },
   "campaigns": {
     "0.1.1-rc.2": {
@@ -113,28 +121,63 @@
       }
     },
     "0.2.1-alpha.2": {
-      "status": "BLOCKED_EXTERNAL",
-      "input_fingerprint": "fb1aca96b4d3ac631d46bac2bf1be11faa1b04999f43f5ce5912881d23e70870",
+      "status": "PASS",
+      "input_fingerprint": "6974ab11b0b2ee9a8762f19adce027d4ccbaee55f2c0b46abb3266c524816fda",
       "route_fingerprint": "0605be4530553cb9e60c18bd8e7926004d45670f5be13c82d3a4ec2fc6ff7ce6",
       "candidate_smoke": {
-        "status": "BLOCKED_EXTERNAL",
-        "attempts": 0,
-        "error": {
-          "code": "MODEL_PROVIDER_TIMEOUT",
-          "message": "模型服务请求超时，每两分钟自动重试一次，最多再试两次；仍失败则冻结定时重跑。"
+        "status": "PASS",
+        "attempts": 1,
+        "fixtures": [],
+        "evidence": {
+          "sessionProtocol": "typert-remote",
+          "reasoningEffort": "high",
+          "selectedModel": {
+            "provider": "deepseek-official",
+            "model": "auto",
+            "reasoningEffort": "high"
+          },
+          "eventTypes": [
+            "agent/inbox/spliced",
+            "approval/policy",
+            "assistant/message",
+            "model/selection",
+            "permission/preset",
+            "request/context",
+            "request/header",
+            "sandbox/mode",
+            "session-log-deepseek/delivery-accepted",
+            "session/title",
+            "step/end",
+            "step/start",
+            "system/message",
+            "tool/call",
+            "tool/result",
+            "turn/end",
+            "turn/start",
+            "user/message"
+          ],
+          "finalResponseSha256": "d8d2189ff3f9e0de5be0a55367c0c87804bd82cf0465fbb38663f4a9eb0fe421",
+          "imageObserved": false,
+          "pluginInputObserved": true
         }
       },
       "usage": {
-        "inputTokens": 0,
+        "inputTokens": 4682,
         "outputTokens": 0,
         "cacheReadTokens": 0,
         "cacheWriteTokens": 0,
         "reasoningTokens": 0,
-        "totalTokens": 0,
-        "sessionFiles": 0
+        "totalTokens": 4682,
+        "sessionFiles": 1
       },
-      "active_ms": 69179,
-      "automatic_repair_used": false
+      "active_ms": 89184,
+      "automatic_repair_used": false,
+      "estimated_cny": {
+        "amount": null,
+        "band": "low_price",
+        "revision": "deepseek-public-2026-08-21",
+        "known": false
+      }
     }
   }
 }
