@@ -2,9 +2,9 @@
   "schema": 1,
   "resetBudget": "N",
   "verified": {
-    "snapshot_key": "a21f2b9e7bce6a7848e15eb479c57918977f91d885d7bb45516b17041bd1c8a2",
-    "source_commit": "da0fc1c08efd74924b38bb1a545a4519ce66ce6d",
-    "source_tree_digest": "ba2280b85810004d825d3f768867745091fb499caad7bd8d2de463d628826e75",
+    "snapshot_key": "9921f5464e374fc99b3be078d3c6ac118916c6b8dbcccb536fa94a10a4e751d6",
+    "source_commit": "5e195075be1ba961f004912521f026313b091ca5",
+    "source_tree_digest": "3b6108aeef8125cf4e06a134773762a4360ad1d87a8d76ba00e40a44ece6d766",
     "dsh": {
       "package": "@deepseek-ai/dsh",
       "version": "0.2.1-alpha.2",
@@ -42,14 +42,14 @@
       },
       "runner": {
         "configuredLabel": "ubuntu-24.04",
-        "actualLabel": "GitHub Actions 1000002444",
+        "actualLabel": "GitHub Actions 1000002472",
         "os": "Linux",
         "arch": "x64",
         "githubActions": true
       }
     },
-    "verified_at": "2026-10-12T02:27:54.976Z",
-    "report_url": "https://github.com/LCYLYM/dsh-attachments-guardian-fixture/actions/runs/38195855245"
+    "verified_at": "2026-10-12T03:26:54.485Z",
+    "report_url": "https://github.com/LCYLYM/dsh-attachments-guardian-fixture/actions/runs/38199748672"
   },
   "campaigns": {
     "0.1.1-rc.2": {
@@ -122,7 +122,7 @@
     },
     "0.2.1-alpha.2": {
       "status": "PASS",
-      "input_fingerprint": "d4a00db03c489908976af46a080bd02e8ee6b39876c1eb697412e667fe534298",
+      "input_fingerprint": "dd03c528efcb990a633b05215991befa129f3d01c856b4a979eeae30fb383d66",
       "route_fingerprint": "0605be4530553cb9e60c18bd8e7926004d45670f5be13c82d3a4ec2fc6ff7ce6",
       "candidate_smoke": {
         "status": "PASS",
@@ -157,21 +157,21 @@
             "turn/start",
             "user/message"
           ],
-          "finalResponseSha256": "fa9a6db37d436be969a94045ef4d51aac8c0952882fbd539ef75273ce7e1844a",
+          "finalResponseSha256": "cb2ecc6ffa9e7d0635558bfb8c7624bac7b067974bec205928e088108e04c7ae",
           "imageObserved": false,
           "pluginInputObserved": true
         }
       },
       "usage": {
-        "inputTokens": 41243,
-        "outputTokens": 143,
+        "inputTokens": 59173,
+        "outputTokens": 457,
         "cacheReadTokens": 0,
         "cacheWriteTokens": 0,
         "reasoningTokens": 0,
-        "totalTokens": 41386,
-        "sessionFiles": 6
+        "totalTokens": 59630,
+        "sessionFiles": 7
       },
-      "active_ms": 329748,
+      "active_ms": 353548,
       "automatic_repair_used": false,
       "estimated_cny": {
         "amount": null,
