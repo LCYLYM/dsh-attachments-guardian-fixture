@@ -13,6 +13,7 @@ repair:
   model: auto
   reasoning_effort: high
   max_output_tokens: 65536
+  max_attempts: 4
   start_policy: immediate
   search:
     enabled: false
@@ -39,9 +40,9 @@ gates:
   require_real_web_boot: true
   require_plugin_assertion: true
 budget:
-  max_tokens: 1000000
+  max_tokens: 100000000
   max_cny: 10
-  max_wall_minutes: 60
+  max_wall_minutes: 180
   converge_remaining_ratio: 0.3
   converge_message_enabled: true
 delivery:
