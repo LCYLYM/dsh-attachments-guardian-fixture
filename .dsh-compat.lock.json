@@ -2,20 +2,20 @@
   "schema": 1,
   "resetBudget": "N",
   "verified": {
-    "snapshot_key": "9921f5464e374fc99b3be078d3c6ac118916c6b8dbcccb536fa94a10a4e751d6",
-    "source_commit": "5e195075be1ba961f004912521f026313b091ca5",
+    "snapshot_key": "9a1c92bc9e527005c4077241ef16e3c81bc97d99c68d5414a498bcfc966be0f3",
+    "source_commit": "f87785a414209241f1aecd3fc93c78668d973f63",
     "source_tree_digest": "3b6108aeef8125cf4e06a134773762a4360ad1d87a8d76ba00e40a44ece6d766",
     "dsh": {
       "package": "@deepseek-ai/dsh",
-      "version": "0.2.1-alpha.2",
-      "integrity": "sha512-CkRE0uAOg2ldL2VpfF4cNRsl178CH5nM+8YklPrlMZl5ln0KhVfd42dJuRlgOXZmkpizCRvrVS8LAL+GKfgk0w==",
-      "graph_digest": "ce6e4a6e5b2620861b970b867cbdea7bc97c7fd976bbbb98010dc85a0818bf3d",
+      "version": "0.2.1-alpha.3",
+      "integrity": "sha512-RngmQ6wIOo58crUgOMcIoj7IRo62ZZuPVORJ65jnUd1m4XbRGYtn63uPW81pjw7eJvkf8o6uaggkGF+Urfzf5w==",
+      "graph_digest": "a39dd63d6f01c64ac233fe26fd75d89960301e72f6b59ef4aba339c378504826",
       "release": {
-        "tag": "dsh-v0.2.1-alpha.2",
-        "version": "0.2.1-alpha.2",
-        "commit": "d743267388641bc76f17c45ce8b4c231aed1d32c",
-        "url": "https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.1-alpha.2",
-        "publishedAt": "2026-10-09T11:09:26Z",
+        "tag": "dsh-v0.2.1-alpha.3",
+        "version": "0.2.1-alpha.3",
+        "commit": "2fbf4359b82fb94c03dcce0b831660d87f12ea5c",
+        "url": "https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.1-alpha.3",
+        "publishedAt": "2026-10-14T13:32:15Z",
         "prerelease": true
       }
     },
@@ -42,14 +42,14 @@
       },
       "runner": {
         "configuredLabel": "ubuntu-24.04",
-        "actualLabel": "GitHub Actions 1000002472",
+        "actualLabel": "GitHub Actions 1000002593",
         "os": "Linux",
         "arch": "x64",
         "githubActions": true
       }
     },
-    "verified_at": "2026-10-12T03:26:54.485Z",
-    "report_url": "https://github.com/LCYLYM/dsh-attachments-guardian-fixture/actions/runs/38199748672"
+    "verified_at": "2026-10-14T17:15:12.552Z",
+    "report_url": "https://github.com/LCYLYM/dsh-attachments-guardian-fixture/actions/runs/38604969336"
   },
   "campaigns": {
     "0.1.1-rc.2": {
@@ -179,6 +179,65 @@
         "revision": "deepseek-public-2026-08-21",
         "known": false
       }
+    },
+    "0.2.1-alpha.3": {
+      "status": "PASS",
+      "input_fingerprint": "d9840040889a04383a0a9b9a4377257d625ac3bd2e01c07a4e5dbe8db51d9115",
+      "candidate_smoke": {
+        "status": "PASS",
+        "attempts": 1,
+        "fixtures": [],
+        "evidence": {
+          "terminalReason": "completed",
+          "sessionProtocol": "typert-remote",
+          "reasoningEffort": "high",
+          "selectedModel": {
+            "provider": "deepseek-official",
+            "model": "auto",
+            "reasoningEffort": "high"
+          },
+          "eventTypes": [
+            "agent/inbox/spliced",
+            "approval/policy",
+            "assistant/message",
+            "model/selection",
+            "permission/preset",
+            "request/context",
+            "request/header",
+            "sandbox/mode",
+            "session-log-deepseek/delivery-accepted",
+            "session/title",
+            "step/end",
+            "step/start",
+            "system/message",
+            "tool/call",
+            "tool/result",
+            "turn/end",
+            "turn/start",
+            "user/message"
+          ],
+          "finalResponseSha256": "a41e2b3a1ded7738e8372abdb9a0bc36ef2541a03cc658297b4266615aba8c9d",
+          "imageObserved": false,
+          "pluginInputObserved": true
+        }
+      },
+      "usage": {
+        "inputTokens": 4910,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0,
+        "reasoningTokens": 0,
+        "totalTokens": 4910,
+        "sessionFiles": 1
+      },
+      "estimated_cny": {
+        "amount": null,
+        "band": "low_price",
+        "revision": "deepseek-public-2026-08-21",
+        "known": false
+      },
+      "active_ms": 30999,
+      "automatic_repair_used": false
     }
   }
 }
