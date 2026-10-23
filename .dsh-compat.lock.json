@@ -179,6 +179,31 @@
         "revision": "deepseek-public-2026-08-21",
         "known": false
       }
+    },
+    "0.2.1-rc.3": {
+      "status": "BLOCKED_CONFIG",
+      "input_fingerprint": "cad6a90034c89c5d17bbabc6896e31472960e533faf4596b03e3281b78c3ee90",
+      "route_fingerprint": "e3b3ba05dc17aaf6e7e9b09484aae5733da503811fb724d81f9b48d59edccb25",
+      "candidate_smoke": {
+        "status": "BLOCKED_CONFIG",
+        "attempts": 1,
+        "error": {
+          "code": "MODEL_CREDENTIAL_REJECTED",
+          "message": "模型服务拒绝了凭据（401/403）。请更新仓库 Secret 后手工重跑。",
+          "terminalDiagnostic": "{\"turn\":1,\"reason\":{\"kind\":\"error\",\"error\":{\"message\":\"DeepSeek Messages request failed (401)\",\"code\":\"AUTH\",\"status\":401,\"requestId\":\"d4231214-1a2d-4ebe-b4e5-3f0853a10e67\"}}}"
+        }
+      },
+      "usage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0,
+        "reasoningTokens": 0,
+        "totalTokens": 0,
+        "sessionFiles": 1
+      },
+      "active_ms": 14307,
+      "automatic_repair_used": false
     }
   }
 }
