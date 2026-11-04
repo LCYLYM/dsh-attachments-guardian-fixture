@@ -179,6 +179,31 @@
         "revision": "deepseek-public-2026-08-21",
         "known": false
       }
+    },
+    "0.2.2-rc.1": {
+      "status": "BLOCKED",
+      "input_fingerprint": "f189a331f296a69e61c53f06aca9db1e0ed6dc6b9413ce319221d068da76e274",
+      "route_fingerprint": "e3b3ba05dc17aaf6e7e9b09484aae5733da503811fb724d81f9b48d59edccb25",
+      "candidate_smoke": {
+        "status": "BLOCKED",
+        "attempts": 1,
+        "error": {
+          "code": "DSH_TURN_DEADLINE",
+          "message": "DSH 的隔离启动、认证或 Session 协议检查未通过；尚不能归因于模型供应商。",
+          "diagnostic": "{}"
+        }
+      },
+      "usage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0,
+        "reasoningTokens": 0,
+        "totalTokens": 0,
+        "sessionFiles": 1
+      },
+      "active_ms": 189997,
+      "automatic_repair_used": false
     }
   }
 }
