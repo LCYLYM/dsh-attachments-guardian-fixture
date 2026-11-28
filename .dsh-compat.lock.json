@@ -179,6 +179,31 @@
         "revision": "deepseek-public-2026-08-21",
         "known": false
       }
+    },
+    "0.2.3-alpha.3": {
+      "status": "BLOCKED",
+      "input_fingerprint": "a508f951f6530e3ae931aefd665caa88705e85cfccf7acdaf84ac4f0f1a52edf",
+      "route_fingerprint": "e3b3ba05dc17aaf6e7e9b09484aae5733da503811fb724d81f9b48d59edccb25",
+      "candidate_smoke": {
+        "status": "BLOCKED",
+        "attempts": 1,
+        "error": {
+          "code": "MODEL_SMOKE_TURN_INCOMPLETE",
+          "message": "DSH 模型回合未正常完成；终止事件或部分回复不能证明成功。",
+          "terminalDiagnostic": "{\"turn\":1,\"reason\":{\"kind\":\"error\",\"error\":{\"message\":\"DeepSeek Messages request failed (405)\",\"code\":\"HTTP_405\",\"status\":405}}}"
+        }
+      },
+      "usage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0,
+        "reasoningTokens": 0,
+        "totalTokens": 0,
+        "sessionFiles": 1
+      },
+      "active_ms": 10627,
+      "automatic_repair_used": false
     }
   }
 }
